@@ -1,0 +1,40 @@
+      S.No,Test Area,Test Description,Expected Result
+1,Login,Verify login with valid credentials,User is logged in and redirected to dashboard
+2,Login,Try invalid credentials,Error message is displayed
+3,Navigation,Validate navigation from login to dashboard,Dashboard loads correctly
+4,Session Persistence,Close and reopen browser after login,User remains logged in due to session cookie
+5,Logout,Verify logout button visibility and function,User is redirected to login screen
+6,Sidebar Navigation,"Check sidebar links (Reports, Filters, Boards)",Navigates correctly to each section
+7,Report Creation,Create a new custom report,Report is created and listed
+8,Report Name Validation,Enter a long or duplicate report name,Name should truncate or show validation
+9,Report Deletion,Delete an existing report,Report is removed
+10,Special Characters,Use @#$%^&*() in report name,Should be handled gracefully or rejected
+11,Filter Application,"Apply filters (e.g., date, status, tag)",Dashboard updates accordingly
+12,Filter Persistence,Reload page after applying filters,Filters should persist
+13,Board View,Switch to boards layout,Data reorganizes as per board format
+14,Drag-and-Drop (Boards),Move cards between columns (if supported),"Card moves correctly, state is saved"
+15,Reset Button,Use Reset inside a report,Fields should clear or revert (should NOT save)
+16,UI Responsiveness,Resize browser window,UI should adapt without breaking
+17,Access Control,Access dashboard without login,Should redirect to login page
+18,Chart Visibility,Check if chart loads in dashboard/report,Chart is present and visible
+19,Error Handling,Simulate network error or invalid data,System displays graceful error state
+20,Duplicate Report Check,Try creating two reports with same name,System should prevent or alert
+21,Filters,"Apply multiple filters together (e.g., date + status)",Dashboard shows combined filtered data
+22,Filters,"Clear filters using ""Reset"" or ""Clear All""",All filters reset to default state
+23,Filters,Check if filters persist after page reload,Selected filters remain applied
+24,Filters,Apply invalid filter combination (if applicable),App handles gracefully or shows error message
+25,Boards,"Navigate to the ""Boards"" section",Board layout displays correctly
+26,Boards,Drag and drop cards between columns,Card moves and state persists
+27,Boards,Create a new board column or list,New column appears immediately
+28,Boards,Delete a board column,Confirmation dialog appears and column is deleted
+29,Boards,Verify responsive behavior on mobile/tablet,Board UI adapts without layout issues
+30,Custom Reports,Create a new report with valid name,Report is saved and listed
+31,Custom Reports,Create report with special characters in the name,App accepts or validates name
+32,Custom Reports,Attempt to create duplicate report name,App blocks or warns about duplicate
+33,Custom Reports,Edit an existing report,Changes save and reflect correctly
+34,Custom Reports,Delete a report,Report is removed from the list
+35,Custom Reports,"Click ""Reset"" in report creation dialog",Form fields clear without saving
+36,Custom Reports,Use long report names and verify layout,UI doesn’t break or overlap other elements
+37,Custom Reports,Add filters inside a custom report,Filtered data updates correctly
+38,Custom Reports,Reload dashboard after creating a report,Newly created report persists
+39,All,"Rapid actions (e.g., double-click ""Create"")","No duplicate reports created, UI handles actions well"
